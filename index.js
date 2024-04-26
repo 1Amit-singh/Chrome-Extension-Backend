@@ -40,6 +40,10 @@ app.get("/:id", (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("Hello world");
+});
+
 app.listen(3333, function () {
   console.log("Port is listening on 3333");
 });
